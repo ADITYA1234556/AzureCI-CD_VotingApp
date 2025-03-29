@@ -73,7 +73,7 @@ Before you begin, ensure you have the following:
 - I am creating a script **script.sh** that can change the image name in k8s-specifications once after each image is built.
 - Inside the script, it takes 3 arguments $1, $2, and $3. 
 - I pass the arguments in the pipeline, as shown in image below
-<img src="image.png" />
+<img src="image.png">**Passing Arguments to scripts/script.sh**</img>
 - Reduce ArgoCD sync time from to 10 seconds "kubectl edit -n argocd cm argocd-cm". Check **argocd-CM.yml**.
 - Kubernetes wont be able to pull image from Azure Container Register since it is a private container registry.
 - Let us use ImagePullSecrets to fix the permission issue.
